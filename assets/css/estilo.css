@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button, input, select, textarea{
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+}
+
+:root{
+    --bg: #18181A;
+    --purple: #743cc7;
+    --purple-1000: #3D0E84;
+    --white: #bebbb7;
+    --grey: #29292b;
+    --black: #000;
+    --grey-100: #969087;
+}
+
+main{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 img{
+    width: 50px;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cima{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cima a:hover{
+    color: var(--purple);
+    transition: 0.5s;
+}
+
+.cima a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+}
+
+div.retangle{
+    width: 100%;
+    height: 2px;
+    background-color: var(--grey);
+    margin-bottom: 2rem;
+    margin-top: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.form input{
+    background: var(--grey);
+    height: 34px;
+    border-radius: 5px;
+    border: 0;
+    transition: 0.5s;
+}
+
+.form input:focus{
+    outline-color: var(--purple-1000);
+    background: var(--black);
+}
+
+.problem{
+    margin-top: -5px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 0.75rem;
+    color:var(--purple)
+}
+
+button{
+    height: 34px;
+    border-radius: 5px;
+    border: 0;
+    background: var(--grey);
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover{
+    background:var(--purple-1000);
+}
+
+select{
+    color: var(--black)
+}
+
+.nascimento{
+    display: flex;
+    flex-direction: column;
+}
+
+.data{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    gap: 0.6rem;
+}
+
+.day{
+    width: 24%;
+}
+
+.day::placeholder{
+    padding-left: 5px;
+}
+
+.month{
+    width: 52%;
+}
+
+.month::placeholder{
+    padding-left: 5px;
+}
+
+.year{
+    width: 24%;
+}
+
+.year::placeholder{
+    padding-left: 5px;
+}
+
+.telefone{
+    display: flex;
+    flex-direction: column;
+}
+
+.telinput{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    gap: 0.6rem;
+}
+
+.telinput .ddd{
+    width: 30%;
+}
+
+.ddd::placeholder{
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.tel::placeholder{
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.telinput .tel{
+    width: 69%;
+}
+
+.other{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 0.1rem;
+}
+
+.other a{
+    text-decoration: none;
+    color: var(--purple);
+    font-size: 15px;
+}
+
+.text{
+    color: var(--grey-100);
+    font-size: 14px;
+    text-align: center;
+}
+
+.text2{
+    margin-top: 10px;
+    color: var(--grey-100);
+    font-size: 14px;
+    text-align: center;
+}
+
+.text2 a{
+    text-decoration: none;
+    color: var(--purple);
+    font-size: 14px;
+}
